@@ -1,3 +1,85 @@
+Mon Jul 24 15:45:34 UTC 2006  William R. Otte  <wotte@dre.vanderbilt.edu>
+        
+        * Subversion conversion completed at revision 73730
+        
+Sun Jul 23 15:44:43 UTC 2006  William R. Otte  <wotte@dre.vanderbilt.edu>
+
+        * Repository frozen for repository conversion
+
+Sat Jul 22 11:16:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tests/QtTests/client.cpp:
+          Updated include because of QtResource move
+
+Fri Jul 21 14:17:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tests/Reliable_Oneways/server.cpp:
+          Initialise pointer with 0
+
+Fri Jul 21 14:13:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tests/RTScheduling/Current/Thread_Task.cpp:
+        * tests/RTScheduling/Thread_Cancel/Thread_Task.cpp:
+          Simplified printing the elements of a string sequence
+
+Fri Jul 21 14:09:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tests/Portable_Interceptors/PICurrent/client.cpp:
+        * tests/Portable_Interceptors/PICurrent/test.idl:
+        * tests/Portable_Interceptors/PICurrent/test_i.{h,cpp}:
+          Extended this test
+
+Fri Jul 21 13:27:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tests/Connection_Timeout/Connection_Timeout.mpc:
+          Simplified this file
+
+Fri Jul 21 13:24:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tests/Bug_2503_Regression/client.cpp:
+        * tests/Bug_2503_Regression/server.cpp:
+        * tests/Bug_2503_Regression/Test.idl:
+        * tests/Bug_2503_Regression/test_i.{h,cpp}:
+          Extended this test in such a way that the client does a shutdown
+          invocation on the server when it is ready.
+
+Fri Jul 21 12:05:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tests/Bug_1551_Regression/Reply_Handler.cpp:
+          At the moment there is a bug in the AMI code it could happen that
+          the exception holder pointer is nill, in that case print an error
+          message instead of trying to invoke a method on it. This shouldn't
+          normally happen, but makes it a lot easier to analyze the problem
+          because we now just get an error message instead of an access
+          violation.
+
+Fri Jul 21 11:48:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * orbsvcs/tests/Notify/lib/Peer.cpp:
+          Removed include of Arg_Shifter.h, it is already done in the header
+          file
+
+Fri Jul 21 08:40:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * utils/catior/catior.cpp:
+          Added needed include to build catior when IIOP has been disabled
+          in the orb
+
+        * tao/Object_T.cpp:
+          Const improvements, use true/false for bool
+
+Fri Jul 21 07:40:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tao/Strategies/UIOP_Profile.cpp:
+        * tao/Strategies/DIOP_Profile.cpp:
+        * tao/Strategies/SCIOP_Profile.cpp:
+          Use true/false instead of 1/0
+
+Fri Jul 21 07:31:12 UTC 2006  Johnny Willemsen  <jwillemsen@remedy.nl>
+
+        * tao/Load_Protocol_Factory_T.h:
+          Added missing return statement
+
 Thu Jul 20 20:38:08 UTC 2006  Shanshan Jiang <shanshan.jiang@vanderbilt.edu>
 
         * docs/tutorials/Quoter/RTCORBA/Broker.cpp
